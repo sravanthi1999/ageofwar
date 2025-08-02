@@ -1,9 +1,11 @@
 package com.game.ageofwar.modal;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.stereotype.Component;
 
-@Component
-
+@Setter
+@Getter
 public class Platoon {
     PlatoonType name;
     int units;
@@ -27,19 +29,4 @@ public class Platoon {
         this.units = Integer.parseInt(parts[1].trim());
     }
 
-    public PlatoonType getName() {
-        return name;
-    }
-
-    public void setName(PlatoonType name) {
-        this.name = name;
-    }
-
-    public int getUnits() {
-        return units;
-    }
-
-    public void setUnits(int units) {
-        this.units = units;
-    }
 }
